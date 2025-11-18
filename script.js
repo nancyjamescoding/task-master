@@ -1,3 +1,7 @@
+const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
 const togglebtn = (element) => {
     if (element.id == "signin"){
         const signinBtn = document.getElementById('signin');
@@ -12,6 +16,8 @@ const togglebtn = (element) => {
         signupForm.classList.remove('active-form')
 
         document.getElementById('createAccountBtn').innerHTML = "Next Step"
+
+        document.getElementById('formId').value = "signin"
     } 
     else{
         const signinBtn = document.getElementById('signin');
@@ -26,6 +32,8 @@ const togglebtn = (element) => {
         loginForm.classList.remove('active-form')
 
         document.getElementById('createAccountBtn').innerHTML = "Create Account"
+
+        document.getElementById('formId').value = "signup"
     }
     
 } 
@@ -37,4 +45,44 @@ const showText = () => {
     document.getElementById("help-btn-id").innerHTML='<i class="fa-solid fa-circle-question"></i> Help?';
 }
 
-// const submitSignInUp  = (this) = 
+const submitSignInUp = () => {
+    const formIdVal = document.getElementById("formId").value;
+
+    if (formIdVal === "signin") {
+        const email = document.getElementById("login-email").value.trim();
+        const password = document.getElementById("login-psw").value.trim();
+        if (email === "" || password === "") {
+            alert("Please enter both email and password.");
+            return;
+        }
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters.");
+            return;
+        }
+
+        alert("Login successful!");
+    }
+
+    else if (formIdVal === "signup") {
+        const fullName = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("signup-email").value.trim();
+        const password = document.getElementById("signup-psw").value.trim();
+        if (fullName === "" || email === "" || password === "") {
+            alert("Please fill all required fields.");
+            return;
+        }
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters.");
+            return;
+        }
+        alert("Signup successful!");
+    }
+};

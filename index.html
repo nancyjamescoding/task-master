@@ -35,26 +35,25 @@
         </div>
         <div class="boundary-one"></div>
       <div class="login-form active-form" id="login-form-id">
-            <form action="action_page.php" method="post">
+            <form action="action_page.php" method="post" id="login-form-id-inner">
                 <div class="container">  
                     <input type="hidden" id="formId" name="custId" value="signin">
                     <div class="input-container">
                         <label for="email">Email*</label>
                         <i class="fas fa-envelope icon"></i>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="email" id="login-email" name="email" placeholder="Email" required>
                     </div>
                     <div class="input-container">
                         <label for="password">Password*</label>
                         <i class="fas fa-lock icon"></i>
-                        <input type="password" id="psw" name="psw" placeholder="Password (min 6 chars)" minlength="6" required>
+                        <input type="password" id="login-psw" name="psw" placeholder="Password (min 6 chars)" minlength="6" required>
                     </div>
                 </div>
             </form>
         </div>
       <div class="signup-form inactive-form" id="signup-form-id">
-            <form action="action_page.php" method="post">
+            <form action="action_page.php" method="post" id="signup-form-id-inner">
                 <div class="container">
-                    <input type="hidden" id="formId" name="custId" value="signup">
                     <label for="name">Full Name*</label>
                     <div class="input-container">
                         <i class="fas fa-user icon"></i>
@@ -79,7 +78,7 @@
                 <i class="fa-solid fa-circle-question"></i> Help?
             </button>
         
-            <button id="createAccountBtn" class="create-account-btn">
+            <button id="createAccountBtn" class="create-account-btn" onclick="submitSignInUp()">
                 Next Step
             </button>
         </div>
