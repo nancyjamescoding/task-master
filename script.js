@@ -10,6 +10,8 @@ const togglebtn = (element) => {
         const signupForm = document.getElementById('signup-form-id');
         signupForm.classList.add('inactive-form')
         signupForm.classList.remove('active-form')
+
+        document.getElementById('createAccountBtn').innerHTML = "Next Step"
     } 
     else{
         const signinBtn = document.getElementById('signin');
@@ -22,10 +24,11 @@ const togglebtn = (element) => {
         const loginForm = document.getElementById('login-form-id');
         loginForm.classList.add('inactive-form')
         loginForm.classList.remove('active-form')
+
+        document.getElementById('createAccountBtn').innerHTML = "Create Account"
     }
     
-}
-
+} 
 const hideText = () => {
     document.getElementById("help-btn-id").innerHTML="";
 }
@@ -33,3 +36,5 @@ const hideText = () => {
 const showText = () => {
     document.getElementById("help-btn-id").innerHTML='<i class="fa-solid fa-circle-question"></i> Help?';
 }
+
+// const submitSignInUp  = (this) = 
