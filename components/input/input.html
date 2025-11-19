@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/components/input/input.css">
+<div class="login-signup-toggle">
+    <div class="option active" onclick="togglebtn(this)" id="signin"><p>Login</p></div>
+    <div class="option" id="signup" onclick="togglebtn(this)"><p>Sign Up</p></div>
+</div>
+<div class="boundary-one"></div>
+<div class="login-form active-form" id="login-form-id">
+    <form action="action_page.php" method="post" id="login-form-id-inner">
+        <div class="container">  
+            <input type="hidden" id="formId" name="custId" value="signin">
+            <div class="input-container">
+                <label for="email">Email*</label>
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" id="login-email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password*</label>
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="login-psw" name="psw" placeholder="Password (min 6 chars)" minlength="6" required>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="signup-form inactive-form" id="signup-form-id">
+    <form action="action_page.php" method="post" id="signup-form-id-inner">
+        <div class="container">
+            <label for="name">Full Name*</label>
+            <div class="input-container">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email*</label>
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password*</label>
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="psw" name="psw" placeholder="......." minlength="6" required>
+            </div>
+            <p>Password must be at least 6 characters long</p>
+        </div>
+    </form>
+</div>
+<script src="/components/input/input.js"></script>

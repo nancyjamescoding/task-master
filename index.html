@@ -2,97 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task-master-app</title>
+    <title>TaskMaster App</title>
+    <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div class="bg-elements">
-        <svg class="bg-shape triangle-1" viewBox="0 0 100 100">
-            <polygon points="50,0 100,100 0,100" />
-        </svg>
-        <svg class="bg-shape triangle-2" viewBox="0 0 100 100">
-            <polygon points="50,0 100,100 0,100" />
-        </svg>
-        <svg class="bg-shape circle-1" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50" />
-        </svg>
-        <svg class="bg-shape arrow-green" viewBox="0 0 100 100">
-            <polygon points="50,0 100,100 0,100" />
-        </svg>
-    </div>
-   <div class="taskmaster-container">
-        <div class="taskmaster-header">
-            <img src="assets/images/icon.png" alt="Logo" /> 
-            <h2>Join TaskMaster</h2> 
-            <div>Create an account to boost your productivity</div>
-        </div>
-        <div class="login-signup-toggle">
-            <div class="option active" onclick="togglebtn(this)" id="signin"><p>Login</p></div>
-            <div class="option" id="signup" onclick="togglebtn(this)"><p>Sign Up</p></div>
-        </div>
-        <div class="boundary-one"></div>
-      <div class="login-form active-form" id="login-form-id">
-            <form action="action_page.php" method="post" id="login-form-id-inner">
-                <div class="container">  
-                    <input type="hidden" id="formId" name="custId" value="signin">
-                    <div class="input-container">
-                        <label for="email">Email*</label>
-                        <i class="fas fa-envelope icon"></i>
-                        <input type="email" id="login-email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="password">Password*</label>
-                        <i class="fas fa-lock icon"></i>
-                        <input type="password" id="login-psw" name="psw" placeholder="Password (min 6 chars)" minlength="6" required>
-                    </div>
-                </div>
-            </form>
-        </div>
-      <div class="signup-form inactive-form" id="signup-form-id">
-            <form action="action_page.php" method="post" id="signup-form-id-inner">
-                <div class="container">
-                    <label for="name">Full Name*</label>
-                    <div class="input-container">
-                        <i class="fas fa-user icon"></i>
-                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="email">Email*</label>
-                        <i class="fas fa-envelope icon"></i>
-                        <input type="email" id="email" name="email" placeholder="hello@example.com" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="password">Password*</label>
-                        <i class="fas fa-lock icon"></i>
-                        <input type="password" id="psw" name="psw" placeholder="......." minlength="6" required>
-                    </div>
-                    <p>Password must be at least 6 characters long</p>
-                </div>
-            </form>
-        </div>
-        <div class="action-area">
-            <button type="button" class="help-btn" onmouseenter="hideText()" onmouseleave="showText()" id="help-btn-id">
-                <i class="fa-solid fa-circle-question"></i> Help?
-            </button>
-        
-            <button id="createAccountBtn" class="create-account-btn" onclick="submitSignInUp()">
-                Next Step
-            </button>
-        </div>
-        <footer class="taskmaster-footer">
-            <p class="terms">
-                By continuing, you agree to our 
-                <a href="#">Terms of Service</a> & 
-                <a href="#">Privacy Policy</a>
-            </p>
-            <p class="copyright">
-                © 2024 TaskMaster | Made for University Students
-            </p>
-        </footer>
-   </div>
-   <script src="script.js"></script>
+    <section data-import="/templates/card/card.html"></section>
+    <script src="/assets/js/global.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.taskmaster-header{ 
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
+    height: 200px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  
+}
+.taskmaster-header img {
+height: 50%;
+width: 25%;
+}

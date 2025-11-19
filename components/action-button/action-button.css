@@ -1,0 +1,64 @@
+.action-area {
+    width: 92%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.action-area .help-btn {
+    flex: 1;
+    background: #f3f4f6;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #374151;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background 0.2s;
+    min-height: 6vh;
+}
+
+.action-area .help-btn:hover {
+    background: #e5e7eb;
+    
+}
+
+.action-area .help-btn i {
+    color: #374151;
+    font-size: 18px;
+}
+
+.action-area .create-account-btn {
+    flex: 1;
+    background: #E9A700;
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 6vh;
+}
+
+.action-area .create-account-btn:hover {
+    background-color: #EBAA00;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.action-area .create-account-btn:active {
+    transform: scale(0.97);
+}
