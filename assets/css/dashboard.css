@@ -1,0 +1,9 @@
+.navbar{
+    width: 20%;
+    height: inherit;
+    float: left;
+}
+.dash {
+    height: inherit;
+    float: right;
+}
