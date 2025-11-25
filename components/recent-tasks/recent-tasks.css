@@ -11,6 +11,9 @@
     border-radius: 10px;
     border: 1px solid #e5e7eb;
 }
+.fa-clock {
+color:#4F39F6 ;
+}
 
 .no-tasks {
     text-align: center;
@@ -37,5 +40,6 @@
 }
 
 .qa-item:hover {
-    background: #dbe7ff;
+   background-color:  #0092B9;
+   color: white;
 }

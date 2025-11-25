@@ -28,3 +28,19 @@
 .stat-icon i {
     font-size: 18px;
 }
+.stat-icon1{
+    background-color:#165DFC;
+    color:#FFFFFF ;
+}
+.stat-icon2{
+   background-color: #0092B9;
+   color:#FFFFFF;
+}
+.stat-icon3{
+    background-color:#00A63D;
+    color:#FFFFFF;
+ }
+ .stat-icon4{
+    background-color: #4F39F6;
+    color:#FFFFFF;
+ }

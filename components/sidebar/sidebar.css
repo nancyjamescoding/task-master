@@ -9,7 +9,7 @@
 
 
 .sidebar.collapsed {
-    width: 20%;
+    width: 40%;
 }
 
 .sidebar.collapsed .logo-text,
@@ -72,8 +72,9 @@ display: none;
 
 .sidebar-menu {
     list-style: none;
-    /* padding-left: 20px; */
+    padding-left: 20px;
     height: 65vh; 
+    
 }
 
 .menu-item {
@@ -84,12 +85,13 @@ display: none;
     text-decoration: none;
     color: #333;
     border-radius: 8px;
-   
+    
 }
 
 .menu-item:hover {
     background: #eef4ff;
-    color: #2563eb;
+    color:#eef4ff;
+    
 
 }
 
