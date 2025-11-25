@@ -1,0 +1,41 @@
+.main-lower-section {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.recent-tasks {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.no-tasks {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.quick-actions {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.qa-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    line-height: 0%;
+}
+
+.qa-item:hover {
+    background: #dbe7ff;
+}
