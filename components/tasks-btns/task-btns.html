@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/components/tasks-btns/task-btns.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="tabs">
+    <button class="tab active"><span><img src="/assets/images/mytasks.svg">My Tasks</span></button>
+    <button class="tab">
+        <span class="chart-icon"><i class="fa-solid fa-chart-simple"></i></span> AI Summary
+    </button>
+</div>
+<div class="stats">
+    <div class="stat-box">
+        <h3 id="activeCount">0</h3>
+        <p>Active tasks</p>
+    </div>
+
+    <div class="stat-box">
+        <h3 class="green" id="completedCount">0</h3>
+        <p>Completed</p>
+    </div>
+    <button class="add-btn" onclick="openTaskModal()">+ Add Task</button>
+</div>
+
+<div class="empty-state">
+    <div class="empty-circle"></div>
+    <p class="empty-title">No tasks yet</p>
+    <p class="empty-subtitle">Click "Add Task" to create your first task</p>
+</div>
+<div class="add-task-modal-off" id="add-task-modal-id">
+    <div class="modal-overlay" id="taskModal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="spark-icon">✨</span>
+                    <div>
+                        <h2>Create New Task</h2>
+                        <p>Add a new task to your productivity list</p>
+                    </div>
+                </div>
+    
+                <button class="close-btn" id="closeTaskModal" onclick="closeTaskModal()">✕</button>
+            </div>
+    
+            <div class="modal-body">
+    
+                <label class="field-label">Title</label>
+                <div class="input-row">
+                    <input type="text" id="task-title" class="input-field" placeholder="Enter task title" />
+                    <button class="ai-btn">🤖</button>
+                </div>
+    
+                <label class="field-label">Description</label>
+                <textarea id="task-desc" class="textarea-field" placeholder="Add task details..."></textarea>
+    
+                <div class="two-col">
+                    <div>
+                        <label class="field-label">Priority</label>
+                        <select id="task-priority" class="select-field">
+                            <option>Medium</option>
+                            <option>High</option>
+                            <option>Low</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label class="field-label">Due Date</label>
+                        <input type="date" id="task-date" class="input-field" />
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal-footer">
+                <button class="cancel-btn" id="cancelTaskBtn">Cancel</button>
+                <button class="create-btn" id="createTaskBtn">Create Task</button>
+            </div>
+    
+        </div>
+    </div>
+    
+</div>
+<script src="/components/tasks-btns/task-btns.js"></script>

@@ -26,6 +26,7 @@ color:#4F39F6 ;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #e5e7eb;
+    
 }
 
 .qa-item {
@@ -36,10 +37,13 @@ color:#4F39F6 ;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
-    line-height: 0%;
+    line-height: 0%; 
 }
 
 .qa-item:hover {
    background-color:  #0092B9;
    color: white;
+}
+.qa-item-icon{
+    color: #4F39F6;
 }

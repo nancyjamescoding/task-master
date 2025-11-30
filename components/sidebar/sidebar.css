@@ -25,7 +25,9 @@ display: none;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
+    border-bottom: 1px solid #e6e6e6;
+    
 }
 
 .logo-section {
@@ -44,11 +46,12 @@ display: none;
 .user-profile {
     display: flex;
     height: 10vh;
-    width: 80%;
+    width: 90%;
     gap: 5px;
     margin: 0 auto; 
     align-items: center;
     justify-content:flex-start; 
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .user-icon {
@@ -74,6 +77,8 @@ display: none;
     list-style: none;
     padding-left: 20px;
     height: 65vh; 
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #FFFFFF;
     
 }
 
@@ -84,15 +89,12 @@ display: none;
     padding-bottom: 24px;
     text-decoration: none;
     color: #333;
-    border-radius: 8px;
-    
+    border-radius: 8px;  
 }
 
 .menu-item:hover {
     background: #eef4ff;
     color:#eef4ff;
-    
-
 }
 
 .logout-btn {
@@ -105,6 +107,11 @@ display: none;
     width: 80%;
     text-decoration: none;
     color: #e63946;
+    
+    
+}
+.logout-btn:hover{
+    background-color: #ac8f91;
     
 }
 img{

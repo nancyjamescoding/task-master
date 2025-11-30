@@ -1,0 +1,29 @@
+
+.task-header {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.task-header-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.task-icon-box {
+    width: 30%;
+    height: 30%;
+    background: #e8f0ff;
+    color: #2463ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 22px;
+}
+

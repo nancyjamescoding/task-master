@@ -39,3 +39,24 @@ const loadComponentScripts = element => {
     }
 }
 
+const routeDashboard = path => {
+    target = [document.getElementById("dash-id")]
+    if (path==="dashboard"){
+        document.getElementById("dash-id").setAttribute("data-import", "/templates/dash-container/dash-container.html")
+        renderComponent(target)
+    }
+    else if (path === "tasks")
+    {
+        document.getElementById("dash-id").setAttribute("data-import", "/templates/tasks/tasks.html")
+        renderComponent(target)
+    }
+    else if (path === "community"){
+
+    }
+    else if (path === "expenses"){
+
+    }
+    else{
+
+    }
+}
