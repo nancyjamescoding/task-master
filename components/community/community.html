@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/components/community/community.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<body>
+    <div class="board-container">
+        <header class="board-header">
+            <div class="icon-group">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+            <div>
+                <h1 class="board-title">Community Board</h1>
+                <p class="board-subtitle">Collaborate with your team</p>
+            </div>
+        </header>
+
+        <div class="new-post-box">
+            <div class="user-avatar">NN</div>
+            <textarea 
+                class="post-input" 
+                placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)"
+                rows="3"
+            ></textarea>
+            <button class="post-button" disabled id="postButton">
+                <i class="fas fa-paper-plane"></i> Post
+            </button>
+        </div>
+
+        <div class="post-feed">
+            <div class="empty-state">
+                <div class="empty-icon">
+                    <i class="far fa-comment-alt"></i>
+                </div>
+                <p>No posts yet. Be the first to share something!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/components/community/community.js"></script>
+</body>
+</html>
