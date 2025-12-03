@@ -1,29 +1,53 @@
 <link rel="stylesheet" href="/components/tasks-btns/task-btns.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <div class="tabs">
-    <button class="tab active"><span><img src="/assets/images/mytasks.svg">My Tasks</span></button>
-    <button class="tab">
-        <span class="chart-icon"><i class="fa-solid fa-chart-simple"></i></span> AI Summary
-    </button>
-</div>
-<div class="stats">
-    <div class="stat-box">
-        <h3 id="activeCount">0</h3>
-        <p>Active tasks</p>
+    <div class="tab active" onclick="toggleTasks(this)" id="my-tasks-id">
+        <i class="fa-regular fa-circle-check"></i>
+        &nbsp;
+        &nbsp;
+        <p>My Tasks</p>
     </div>
-
-    <div class="stat-box">
-        <h3 class="green" id="completedCount">0</h3>
-        <p>Completed</p>
+    <div class="tab" onclick="toggleTasks(this)" id="ai-summary-id">
+        <i class="fa-solid fa-chart-simple"></i>
+        &nbsp;
+        &nbsp;
+        <p>AI Summary</p>
     </div>
-    <button class="add-btn" onclick="openTaskModal()">+ Add Task</button>
+</div>
+<div class="my-tasks-sect" id="my-tasks-sect-id">
+    <div class="stats">
+        <div class="stat-box-cont">
+            <div class="stat-box">
+                <h3 id="activeCount">0</h3>
+                <p>Active tasks</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="green" id="completedCount">0</h3>
+                <p>Completed</p>
+            </div>
+        </div>
+        
+        <div class="add-task-cont">
+            <button class="add-btn" onclick="openTaskModal()">+ Add Task</button>
+        </div>
+    </div>
+    <div class="empty-state">
+        <div class="empty-circle"></div>
+        <p class="empty-title">No tasks yet</p>
+        <p class="empty-subtitle">Click "Add Task" to create your first task</p>
+    </div>
+</div>
+<div class="ai-summary-sect" id="">
+    <div class="stats">
+        
+    </div>
+    <div class="empty-state">
+        <div class="empty-circle"></div>
+        <p class="empty-title">No tasks yet</p>
+        <p class="empty-subtitle">Click "Add Task" to create your first task</p>
+    </div>
 </div>
 
-<div class="empty-state">
-    <div class="empty-circle"></div>
-    <p class="empty-title">No tasks yet</p>
-    <p class="empty-subtitle">Click "Add Task" to create your first task</p>
-</div>
 <div class="add-task-modal-off" id="add-task-modal-id">
     <div class="modal-overlay" id="taskModal">
         <div class="modal">
@@ -74,6 +98,6 @@
     
         </div>
     </div>
-    
+     
 </div>
 <script src="/components/tasks-btns/task-btns.js"></script>

@@ -51,6 +51,8 @@ const routeDashboard = path => {
         renderComponent(target)
     }
     else if (path === "community"){
+        document.getElementById("dash-id").setAttribute("data-import", "/templates/community/community.html")
+        renderComponent(target)
 
     }
     else if (path === "expenses"){

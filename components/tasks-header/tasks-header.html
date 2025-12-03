@@ -2,10 +2,29 @@
 <link rel="stylesheet" href="/components/tasks-header/tasks-header.css">
 <div class="task-header">
     <div class="task-header-left">
-        <div class="task-icon-box"><img src="/assets/images/icon.png" alt=""></div>
+        <div class="task-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 120 120">
+                <defs>
+                  <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#3b6bff"/>
+                    <stop offset="1" stop-color="#4b39ff"/>
+                  </linearGradient>
+                </defs>
+              
+                <!-- rounded square background -->
+                <rect x="6" y="6" width="108" height="108" rx="18" fill="url(#g)"/>
+              
+                <!-- white rounded square -->
+                <rect x="30" y="30" width="60" height="60" rx="8" fill="none" stroke="#ffffff" stroke-width="6"/>
+              
+                <!-- check mark -->
+                <path d="M42 60 L54 72 L78 48" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </div>
         <div>
             <h2>Task Management</h2>
             <p>Manage and track your tasks</p>
         </div>
     </div>
+</div>
 </div>
